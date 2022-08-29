@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="input-item">
+    <label for="stackSizeInp">栈容量</label>
+    <input id="stackSizeInp"/>
+    <button title="建一个栈" type="button" id="stackSizeBtn">建栈</button>
+</div>
+<div class="input-item">
+    <label for="pushValInp">入栈值</label>
+    <input id="pushValInp"/>
+    <button type="button" id="pushValBtn">入栈</button>
+</div>
+<div class="input-item">
+    <label for="popValInp">出栈值</label>
+    <input id="popValInp" disabled/>
+    <button type="button" id="popValBtn">出栈</button>
+</div>
+<div class="input-item">
+    <label for="stackInp"></label>
+    <input id="stackInp" disabled style="width: 100%"/>
+</div>
+<hr>
+<div class="input-item">
+    <label for="reverseInp">回文值</label>
+    <input id="reverseInp"/>
+    <button type="button" id="reverseBtn">判断</button>
+</div>
+<div class="input-item">
+    <label for="reverseResInp"></label>
+    <input id="reverseResInp" disabled style="width: 100%"/>
+</div>
+<hr>
+<div class="input-item">
+    <label for="calculateInp">栈计算器</label>
+    <input id="calculateInp"/>
+    <button type="button" id="calculateBtn">计算</button>
+</div>
+<div class="input-item">
+    <label for="calculateResInp"></label>
+    <input id="calculateResInp" disabled style="width: 100%"/>
+</div>
+<hr>
+
+<div class="input-item">
+    <label for="nodeIdInp">ID</label>
+    <input id="nodeIdInp" style="width: 20%"/>
+    <label for="nodeDataInp">DATA</label>
+    <input id="nodeDataInp" style="width: 20%"/>
+</div>
+<div class="input-item">
+    <button type="button" id="addBtn">添加</button>
+    <button type="button" id="deleteBtn">删除</button>
+    <button type="button" id="updateBtn">更新</button>
+    <button type="button" id="resetBtn">重置</button>
+</div>
+<div class="input-item">
+    <label for="nodeResInp"></label>
+    <textarea id="nodeResInp" disabled style="width: 100%"></textarea>
+</div>
+<hr>
+
+</body>
+</html>
+
+
+<script src="ArrayStackTest.js" type="module"></script>
+<script src="NodeListTest.js" type="module"></script>
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        cursor: pointer;
+    }
+
+    hr {
+        width: 100vw;
+    }
+
+    .input-item {
+        width: 50vw;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1vh;
+    }
+
+    .input-item label {
+        font-size: 30px;
+    }
+
+    .input-item input {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .input-item button {
+        font-size: 30px;
+    }
+
+    textarea {
+        font-size: 30px;
+        text-align: center;
+        height: 80px;
+    }
+
+
+</style>
