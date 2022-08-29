@@ -46,6 +46,7 @@
 </div>
 <hr>
 
+<div style="font-size: 30px">单向列表</div>
 <div class="input-item">
     <label for="nodeIdInp">ID</label>
     <input id="nodeIdInp" style="width: 20%"/>
@@ -64,12 +65,31 @@
 </div>
 <hr>
 
+<div style="font-size: 30px">双向列表</div>
+<div class="input-item">
+    <label for="nodeTwoWayIdInp">ID</label>
+    <input id="nodeTwoWayIdInp" style="width: 20%"/>
+    <label for="nodeTwoWayDataInp">DATA</label>
+    <input id="nodeTwoWayDataInp" style="width: 20%"/>
+</div>
+<div class="input-item">
+    <button type="button" id="nodeTwoWayAddBtn">添加</button>
+    <button type="button" id="nodeTwoWayDeleteBtn">删除</button>
+    <button type="button" id="nodeTwoWayUpdateBtn">更新</button>
+    <button type="button" id="nodeTwoWayResetBtn">重置</button>
+</div>
+<div class="input-item">
+    <label for="nodeTwoWayNodeResInp"></label>
+    <textarea id="nodeTwoWayNodeResInp" disabled style="width: 100%"></textarea>
+</div>
+<hr>
+
 </body>
 </html>
 
-
 <script src="ArrayStackTest.js" type="module"></script>
 <script src="NodeListTest.js" type="module"></script>
+<script src="NodeTwoWayListTest.js" type="module"></script>
 
 <style>
     body {

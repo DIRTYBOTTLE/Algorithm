@@ -13,6 +13,7 @@ module.exports = {
         indent: 0,
         quotes: 0,
         semi: ["error", "always"],
-        "no-eval": 0
+        "no-eval": 0,
+        "space-before-function-paren": 0
     }
 };
