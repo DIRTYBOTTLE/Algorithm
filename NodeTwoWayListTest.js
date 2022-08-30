@@ -24,3 +24,35 @@ addBtn.addEventListener("click", () => {
         }
     }
 });
+
+deleteBtn.addEventListener("click", () => {
+    const id = nodeIdInp.value;
+    if (id) {
+        try {
+            const node = new NodeTwoWay(id);
+            nodeList.deleteById(node);
+            nodeResInp.value = nodeList.toString();
+        } catch (e) {
+            nodeResInp.value += `\n${e.message}`;
+        }
+    }
+});
+
+updateBtn.addEventListener("click", () => {
+    const id = nodeIdInp.value;
+    const data = nodeDataInp.value;
+    if (id && data) {
+        try {
+            const node = new NodeTwoWay(id, data);
+            nodeList.updateById(node);
+            nodeResInp.value = nodeList.toString();
+        } catch (e) {
+            nodeResInp.value += `\n${e.message}`;
+        }
+    }
+});
+
+resetBtn.addEventListener("click", () => {
+    nodeList = new NodeTwoWayList();
+    nodeResInp.value = "";
+});

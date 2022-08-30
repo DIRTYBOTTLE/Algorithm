@@ -1,5 +1,5 @@
-import NodeList from "./NodeList.js";
-import Node from "./Node.js";
+import NodeList from "./NodeOneWayList.js";
+import NodeOneWay from "./NodeOneWay.js";
 
 const nodeIdInp = document.getElementById("nodeIdInp");
 const nodeDataInp = document.getElementById("nodeDataInp");
@@ -14,7 +14,7 @@ let nodeList = new NodeList();
 addBtn.addEventListener("click", () => {
     const id = nodeIdInp.value;
     const data = nodeDataInp.value;
-    const node = new Node(id, data);
+    const node = new NodeOneWay(id, data);
     try {
         nodeList.addById(node);
     } catch (e) {
@@ -28,7 +28,7 @@ addBtn.addEventListener("click", () => {
 deleteBtn.addEventListener("click", () => {
     const id = nodeIdInp.value;
     if (id && nodeList.length() > 0) {
-        const node = new Node(id);
+        const node = new NodeOneWay(id);
         try {
             nodeList.deleteById(node);
         } catch (e) {
@@ -45,7 +45,7 @@ updateBtn.addEventListener("click", () => {
     const data = nodeDataInp.value;
     // console.log(nodeList.length())
     if (id && data && nodeList.length() > 0) {
-        const node = new Node(id, data);
+        const node = new NodeOneWay(id, data);
         try {
             nodeList.updateById(node);
         } catch (e) {

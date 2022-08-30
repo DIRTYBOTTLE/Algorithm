@@ -1,8 +1,8 @@
-import Node from './Node.js';
+import NodeOneWay from './NodeOneWay.js';
 
 export default class NodeList {
     constructor () {
-        this.headNode = new Node(0, undefined);
+        this.headNode = new NodeOneWay(0, undefined);
     }
 
     add (node) {
