@@ -5,18 +5,6 @@ export default class NodeList {
         this.headNode = new NodeOneWay(0, undefined);
     }
 
-    add (node) {
-        let tempNode = this.headNode;
-        while (true) {
-            if (tempNode.next !== null) {
-                tempNode = tempNode.next;
-            } else {
-                break;
-            }
-        }
-        tempNode.next = node;
-    }
-
     addById (node) {
         let tempNode = this.headNode;
         const id = node.id;

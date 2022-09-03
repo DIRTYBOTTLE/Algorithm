@@ -1,95 +1,142 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
-<div class="input-item">
-    <label for="stackSizeInp">栈容量</label>
-    <input id="stackSizeInp"/>
-    <button title="建一个栈" type="button" id="stackSizeBtn">建栈</button>
-</div>
-<div class="input-item">
-    <label for="pushValInp">入栈值</label>
-    <input id="pushValInp"/>
-    <button type="button" id="pushValBtn">入栈</button>
-</div>
-<div class="input-item">
-    <label for="popValInp">出栈值</label>
-    <input id="popValInp" disabled/>
-    <button type="button" id="popValBtn">出栈</button>
-</div>
-<div class="input-item">
-    <label for="stackInp"></label>
-    <input id="stackInp" disabled style="width: 100%"/>
-</div>
-<hr>
-<div class="input-item">
-    <label for="reverseInp">回文值</label>
-    <input id="reverseInp"/>
-    <button type="button" id="reverseBtn">判断</button>
-</div>
-<div class="input-item">
-    <label for="reverseResInp"></label>
-    <input id="reverseResInp" disabled style="width: 100%"/>
-</div>
-<hr>
-<div class="input-item">
-    <label for="calculateInp">栈计算器</label>
-    <input id="calculateInp"/>
-    <button type="button" id="calculateBtn">计算</button>
-</div>
-<div class="input-item">
-    <label for="calculateResInp"></label>
-    <input id="calculateResInp" disabled style="width: 100%"/>
-</div>
-<hr>
+    <div style="font-size: 30px">队列</div>
+    <div class="input-item">
+        <label for="queueSizeInp">容量</label>
+        <input id="queueSizeInp" />
+        <button title="建一个栈" type="button" id="queueSizeBtn">建列</button>
+    </div>
+    <div class="input-item">
+        <label for="queuePushInp">入值</label>
+        <input id="queuePushInp" />
+        <button type="button" id="queuePushBtn">入列</button>
+    </div>
+    <div class="input-item">
+        <label for="queuePopInp">出值</label>
+        <input id="queuePopInp" disabled />
+        <button type="button" id="queuePopBtn">出列</button>
+    </div>
+    <div class="input-item">
+        <label for="queueInp"></label>
+        <input id="queueInp" disabled style="width: 100%" />
+    </div>
+    <hr>
 
-<div style="font-size: 30px">单向列表</div>
-<div class="input-item">
-    <label for="nodeIdInp">ID</label>
-    <input id="nodeIdInp" style="width: 20%"/>
-    <label for="nodeDataInp">DATA</label>
-    <input id="nodeDataInp" style="width: 20%"/>
-</div>
-<div class="input-item">
-    <button type="button" id="addBtn">添加</button>
-    <button type="button" id="deleteBtn">删除</button>
-    <button type="button" id="updateBtn">更新</button>
-    <button type="button" id="resetBtn">重置</button>
-</div>
-<div class="input-item">
-    <label for="nodeResInp"></label>
-    <textarea id="nodeResInp" disabled style="width: 100%"></textarea>
-</div>
-<hr>
+    <div class="input-item">
+        <label for="stackSizeInp">栈容量</label>
+        <input id="stackSizeInp" />
+        <button title="建一个栈" type="button" id="stackSizeBtn">建栈</button>
+    </div>
+    <div class="input-item">
+        <label for="pushValInp">入栈值</label>
+        <input id="pushValInp" />
+        <button type="button" id="pushValBtn">入栈</button>
+    </div>
+    <div class="input-item">
+        <label for="popValInp">出栈值</label>
+        <input id="popValInp" disabled />
+        <button type="button" id="popValBtn">出栈</button>
+    </div>
+    <div class="input-item">
+        <label for="stackInp"></label>
+        <input id="stackInp" disabled style="width: 100%" />
+    </div>
+    <hr>
+    <div class="input-item">
+        <label for="reverseInp">回文值</label>
+        <input id="reverseInp" />
+        <button type="button" id="reverseBtn">判断</button>
+    </div>
+    <div class="input-item">
+        <label for="reverseResInp"></label>
+        <input id="reverseResInp" disabled style="width: 100%" />
+    </div>
+    <hr>
+    <div class="input-item">
+        <label for="calculateInp">栈计算器</label>
+        <input id="calculateInp" />
+        <button type="button" id="calculateBtn">计算</button>
+    </div>
+    <div class="input-item">
+        <label for="calculateResInp"></label>
+        <input id="calculateResInp" disabled style="width: 100%" />
+    </div>
+    <hr>
 
-<div style="font-size: 30px">双向列表</div>
-<div class="input-item">
-    <label for="nodeTwoWayIdInp">ID</label>
-    <input id="nodeTwoWayIdInp" style="width: 20%"/>
-    <label for="nodeTwoWayDataInp">DATA</label>
-    <input id="nodeTwoWayDataInp" style="width: 20%"/>
-</div>
-<div class="input-item">
-    <button type="button" id="nodeTwoWayAddBtn">添加</button>
-    <button type="button" id="nodeTwoWayDeleteBtn">删除</button>
-    <button type="button" id="nodeTwoWayUpdateBtn">更新</button>
-    <button type="button" id="nodeTwoWayResetBtn">重置</button>
-</div>
-<div class="input-item">
-    <label for="nodeTwoWayNodeResInp"></label>
-    <textarea id="nodeTwoWayNodeResInp" disabled style="width: 100%"></textarea>
-</div>
-<hr>
+    <div style="font-size: 30px">单向链表</div>
+    <div class="input-item">
+        <label for="nodeIdInp">ID</label>
+        <input id="nodeIdInp" style="width: 20%" />
+        <label for="nodeDataInp">DATA</label>
+        <input id="nodeDataInp" style="width: 20%" />
+    </div>
+    <div class="input-item">
+        <button type="button" id="addBtn">添加</button>
+        <button type="button" id="deleteBtn">删除</button>
+        <button type="button" id="updateBtn">更新</button>
+        <button type="button" id="resetBtn">重置</button>
+    </div>
+    <div class="input-item">
+        <label for="nodeResInp"></label>
+        <textarea id="nodeResInp" disabled style="width: 100%"></textarea>
+    </div>
+    <hr>
 
+    <div style="font-size: 30px">双向链表</div>
+    <div class="input-item">
+        <label for="nodeTwoWayIdInp">ID</label>
+        <input id="nodeTwoWayIdInp" style="width: 20%" />
+        <label for="nodeTwoWayDataInp">DATA</label>
+        <input id="nodeTwoWayDataInp" style="width: 20%" />
+    </div>
+    <div class="input-item">
+        <button type="button" id="nodeTwoWayAddBtn">添加</button>
+        <button type="button" id="nodeTwoWayDeleteBtn">删除</button>
+        <button type="button" id="nodeTwoWayUpdateBtn">更新</button>
+        <button type="button" id="nodeTwoWayResetBtn">重置</button>
+    </div>
+    <div class="input-item">
+        <label for="nodeTwoWayNodeResInp"></label>
+        <textarea id="nodeTwoWayNodeResInp" disabled style="width: 100%"></textarea>
+    </div>
+    <hr>
+
+    <div style="font-size: 30px">约瑟夫问题</div>
+    <div class="input-item">
+        <label for="nodeCircleSumInp">人数</label>
+        <input id="nodeCircleSumInp" style="width:20%"/>
+        <label for="nodeCircleStartInp">起始</label>
+        <input id="nodeCircleStartInp" style="width:20%"/>
+        <label for="nodeCircleIntervalInp">间隔</label>
+        <input id="nodeCircleIntervalInp" style="width:20%"/>
+    </div>
+    <div class="input-item">
+        <button type="button" id="nodeCircleAddBtn">生成</button>
+        <button type="button" id="nodeCircleOutBtn">出圈</button>
+    </div>
+    <div class="input-item">
+        <label for="nodeCircleResInp"></label>
+        <textarea id="nodeCircleResInp" disabled style="width: 100%"></textarea>
+    </div>
+    <hr>
 </body>
+
 </html>
 
 <script src="ArrayStackTest.js" type="module"></script>
 <script src="NodeOneWayListTest.js" type="module"></script>
 <script src="NodeTwoWayListTest.js" type="module"></script>
+<script src="NodeCircleListTest.js" type="module"></script>
+<script src="ArrayQueueTest.js" type="module"></script>
+
+
 
 <style>
     body {
@@ -131,6 +178,4 @@
         text-align: center;
         height: 80px;
     }
-
-
 </style>
